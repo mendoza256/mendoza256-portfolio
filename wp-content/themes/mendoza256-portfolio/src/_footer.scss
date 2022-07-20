@@ -1,0 +1,81 @@
+// FOOTER STYLE
+footer {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  height: 100vh;
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  overflow: hidden;
+  @include moreThan(xl) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .profilePhoto {
+    img {
+      border: 4px solid #35618d52;
+      border-radius: 50%;
+      width: max(18rem, 20vw);
+      height: max(18rem, 20vw);
+      object-fit: cover;
+      object-position: 0 15%;
+    }
+  }
+  .linksAndMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    justify-content: space-around;
+    height: 100%;
+    @include moreThan(md) {
+      padding: 80 px;
+    }
+    .helloMessage {
+      padding: 0 80px;
+      h1 {
+        font-weight: 500;
+        text-align: center;
+      }
+      @include moreThan(sm) {
+        padding: 0;
+      }
+    }
+    nav.links {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      img {
+        max-width: 140px;
+        height: auto;
+        padding: 20px;
+      }
+    }
+    a {
+      display: flex;
+      justify-content: center;
+    }
+    .linkToMessage {
+      color: rgb(51, 51, 51);
+      background-color: rgba(255, 255, 255, 0.267);
+      border-radius: 1rem;
+      transition: background-color 0.15s ease-in-out;
+      padding: 10px 40px;
+      @include moreThan(sm) {
+        width: 100%;
+        padding: 20px 80px;
+      }
+      h2 {
+        font-weight: 400;
+        padding: 0 20px;
+        text-align: center;
+      }
+      &:hover {
+        color: rgb(77, 77, 77);
+        background: rgba(196, 196, 196, 0.267);
+      }
+    }
+  }
+}
