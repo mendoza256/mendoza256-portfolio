@@ -21,16 +21,22 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'local' );
-
-/** Database username */
-define( 'DB_USER', 'root' );
-
-/** Database password */
-define( 'DB_PASSWORD', 'root' );
-
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
+// if ( strstr( $_SERVER['SERVER_NAME'], 'mendoza256portfolio.local/' ) ) {
+if (strstr($_SERVER['SERVER_NAME'], 'mendoza256portfolio.local/')) {
+	define( 'DB_NAME', 'local' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', 'root' );
+	define( 'DB_HOST', 'localhost' );
+} else {
+	define( 'DB_NAME', 'mendoza256portfolio' );
+	define( 'DB_USER', 'mendoza256' );
+	define( 'DB_PASSWORD', 'U29ymZW9WEdbBixmAsRX' );
+	define( 'DB_HOST', 'mysql.christiangraumann.de' );
+}
+// define( 'DB_NAME', 'mendoza256portfolio' );
+// define( 'DB_USER', 'mendoza256' );
+// define( 'DB_PASSWORD', 'U29ymZW9WEdbBixmAsRX' );
+// define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
