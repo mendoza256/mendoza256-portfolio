@@ -28,10 +28,10 @@ if (strstr($_SERVER['SERVER_NAME'], 'mendoza256portfolio.local/')) {
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 } else {
-	define( 'DB_NAME', 'mendoza256portfolio' );
-	define( 'DB_USER', 'mendoza256' );
-	define( 'DB_PASSWORD', 'U29ymZW9WEdbBixmAsRX' );
-	define( 'DB_HOST', 'mysql.christiangraumann.de' );
+	define( 'DB_NAME', '<name>' );
+	define( 'DB_USER', '<user>' );
+	define( 'DB_PASSWORD', '<password>' );
+	define( 'DB_HOST', '<host>' );
 }
 // define( 'DB_NAME', 'mendoza256portfolio' );
 // define( 'DB_USER', 'mendoza256' );
