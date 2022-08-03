@@ -6,3 +6,4 @@ The PHP site then gets the data for the projects from the CMS and displays them 
 
 No prebuild theme was used. I wrote the portfolio theme in PHP, SCSS and JS.
 
+[Live site](https://mendoza256.xyz "Mendoza256 Portfolio")
